@@ -1,1 +1,36 @@
-Hello!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Website</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="page1.html">Page 1</a></li>
+				<li><a href="page2.html">Page 2</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h1>Homepage</h1>
+			<p>Welcome to my website</p>
+			<select id="dropdown">
+				<option value="dataset1">Dataset 1</option>
+				<option value="dataset2">Dataset 2</option>
+				<option value="dataset3">Dataset 3</option>
+			</select>
+			<div id="plot"></div>
+			<script src="plot.js"></script>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Website</p>
+	</footer>
+</body>
+</html>
