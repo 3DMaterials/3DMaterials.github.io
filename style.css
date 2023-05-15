@@ -1,52 +1,165 @@
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 10px;
-}
-
-nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+.navbar{
+	background: #f1f6ff;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: Left;
+	padding: 1%;
+	align-items: center;
+	font-size: 1.9rem;
+	font-weight: bold;
+
+	
+
 }
 
-nav li {
-	margin: 0 10px;
+
+#navbar__logo {
+	background-color: rgb(5, 29, 49);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
-nav a {
-	color: #fff;
-	text-decoration: none;
+
+.sidebar{
+	background:  rgb(5, 29, 49);
+	position: fixed;
+	top: 100px;
+	left: 0;
+	width: 15%;
+	height: 100%;
+	padding: 0%;	
+	transition: all 0.5s ease;
+
+}
+
+#sidebar__logo{
+	background-color: rgb(197, 197, 197);
+	-webkit-background-clip: text;
+
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: x-large;
 	font-weight: bold;
 }
 
-main {
-	margin: 20px;
+.sidebar ul li a{
+	display: block;
+	padding: 5% 5%;
+	justify-content: center;
+	border-bottom: 0px solid rgb(5, 29, 49);
+	color: rgb(241,237,237);
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+
 }
 
-section {
-	margin-bottom: 50px;
+.sidebar ul li a:hover,
+.sidebar ul li a.active{
+    color: rgb(5, 29, 49);
+
+    background:white;
+    border-right: 2px solid rgb(255, 255, 255);
 }
 
-h1 {
-	font-size: 2.5em;
-	margin-top: 0;
+.sidebar ul li a:hover:before,
+.sidebar ul li a.active:before{
+    display: block;
 }
 
-select {
-	padding: 5px;
-	font-size: 1.2em;
-	margin-bottom: 20px;
+.materialbar{
+	background:  rgb(187, 207, 224);
+	position: fixed;
+	top: 100px;
+	left: 15%;
+	width: 100%;
+	height: 100px;
+	padding: 0%;	
+	transition: all 0.5s ease;
+
 }
 
-#plot {
-	height: 400px;
+
+
+
+.dropdown-container {
+	display: flex;
+	justify-content: left;
+  }
+  
+  .dropdown-wrapper {
+	margin: 1% 10px;
+  }
+  
+  .dropdown-menu {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	padding: 5px 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #fff;
+	color: #333;
+	outline: none;
+	cursor: pointer;
+  }
+  
+  .dropdown-menu option {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	padding: 5px 10px;
+	background-color: #fff;
+	color: #333;
+  }
+  
+  .dropdown-wrapper label {
+	display: block;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	color: #333;
+  }
+
+  button {
+	display: block;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	background-color: rgb(5, 29, 49);
+  }
+
+.plot_list {
+	background:  rgb(211, 211, 211);
+	position: fixed;
+	top: 200px;
+	left: 80%;
+	width: 100%;
+	height: 100%;
+	padding: 0%;	
+	transition: all 0.5s ease;
+
+}
+
+.shape_container li {
+	padding: 1%;
+	background: #8a8c8d;
 }
