@@ -136,7 +136,7 @@
 	color: #333;
   }
 
-  button {
+  .subBtn {
 	display: block;
 	margin-top: 1%;
 	margin-bottom: 1%;
@@ -145,6 +145,7 @@
 	font-weight: bold;
 	color: #fff;
 	background-color: rgb(5, 29, 49);
+	cursor:pointer;
   }
 
 .plot_list {
@@ -163,3 +164,57 @@
 	padding: 1%;
 	background: #8a8c8d;
 }
+
+
+.plotCanvas {
+	display: block;
+	box-sizing: border-box;
+	height: 600px;
+	position:relative;
+	width: 1200px;
+	left:16%;
+	top: 100px;
+}
+
+.plotCards {
+  position: fixed;
+  top: 200px;
+  right: 0;
+  width: 20%;
+  height: calc(100% - 200px); /* Adjust height to fit remaining space */
+  background-color: #d3d3d3; /* Replace with desired background color */
+  text-align: center;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+	margin-bottom: 10px;
+  }
+
+.card {
+	content: "";
+	display: table;
+	clear: both;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 10px;
+	padding-right: 20px;
+	text-align: center;
+	background-color: #f1f1f1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+
+  .delBtn {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	padding: 5;
+	font-size: 20px;
+	font-weight: bold;
+	border: none;
+	background-color: #f1f1f1;
+	cursor:pointer;
+  }

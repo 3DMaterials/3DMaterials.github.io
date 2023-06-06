@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<div class="navbar">
 		<div class="navbar__container">
 			<a href="/" id="navbar__logo">3D Materials Database</a>
@@ -44,53 +44,33 @@
 				<div class="dropdown-wrapper">
 				<label for="process_menu">Printing Process:</label>
 				<select id="process_menu" class="dropdown-menu">
-					<option value="" disabled selected>Select an option</option>
-					<option value="fdm">FDM</option>
-					<option value="msla">MSLA</option>
-					<option value="sla">SLA</option>
 				</select>
 				</div>
 			
 				<div class="dropdown-wrapper">
 				<label for="material_menu">Material:</label>
 				<select id="material_menu" class="dropdown-menu">
-					<option value="" disabled selected>Select an option</option>
-					<option value="pla">PLA</option>
-					<option value="abs">ABS</option>
-					<option value="asa">ASA</option>
 				</select>
 				</div>
 			
 				<div class="dropdown-wrapper">
 				<label for="brand_menu">Brand:</label>
 				<select id="brand_menu" class="dropdown-menu">
-					<option value="" disabled selected>Select an option</option>
-					<option value="esun">ESUN</option>
-					<option value="polymaker">Polymaker</option>
-					<option value="anycubic">Anycubic</option>
 				</select>
 				</div>
 
 				<div class="dropdown-wrapper">
 					<label for="perim_menu">Perimeters:</label>
 					<select id="perim_menu" class="dropdown-menu">
-					<option value="" disabled selected>Select an option</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
 					</select>
 				</div>
 
 				<div class="dropdown-wrapper">
 					<label for="infill_menu">Infill:</label>
 					<select id="infill_menu" class="dropdown-menu">
-					<option value="" disabled selected>Select an option</option>
-					<option value="10">10%</option>
-					<option value="20">20%</option>
-					<option value="30">30%</option>
 					</select>
 				</div>
-				<button type="button" onclick="addData()">Add Data</button>
+				<button class="subBtn" type="button" onclick="addData()">Add Data</button>
 			</div>
 		</form>
 		</div>
@@ -99,14 +79,18 @@
 
 	</div>
 
-	<div id='line_list' class="plot_list">
-		<li class="line_shapes"><label for="plot_1">FDM - PLA - ESUN</label></li>
-		<li class="line_shapes"><label for="plot_1">FDM - PETG - ESUN</label></li>			
+	<div id='myChart' class='plotCanvas'>
 	</div>
-	
-	<script src="script.js"></script>
+
+	<div id='legend' class='plotCards'>
+		<h3>Plotted Data</h3>
+		<p>Material - Brand	&emsp; Perimeters/Infill</p>
+
+	</div>
 
 	
+	<script src="https://cdn.plot.ly/plotly-2.20.0.min.js" charset="utf-8"></script>
+	<script src="script.js"></script>
 	
 	
 </body>
