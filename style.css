@@ -170,12 +170,20 @@
 	display: block;
 	box-sizing: border-box;
 	height: 600px;
-	position:relative;
-	width: 1200px;
+	position:fixed;
+	right: 20%;
 	left:16%;
-	top: 100px;
+	top: 200px;
+	width: calc(100% - 36%);
 }
 
+@media screen and (max-width: 768px) {
+	.plotCanvas {
+	  left: 0;
+	  right: 0;
+	  width: 100%;
+	}
+}
 .plotCards {
   position: fixed;
   top: 200px;
@@ -218,3 +226,14 @@
 	background-color: #f1f1f1;
 	cursor:pointer;
   }
+
+  .mainBody {
+	display: block;
+	box-sizing: border-box;
+	height: 600px;
+	position:fixed;
+	right: 0%;
+	left:16%;
+	top: 100;
+	width: calc(100% - 36%);
+}

@@ -159,7 +159,37 @@ var chartData = [];
     };
     
     chartData.push(trace);
-    var layout = {showlegend: false};
+    var layout = {showlegend: false,
+      title: {
+        text:'Stress Strain Curve',
+        font: {
+          family: 'Open Sans, monospace',
+          size: 24
+        },
+        xref: 'paper',
+        x: 0.05,
+      },
+      xaxis: {
+        title: {
+          text: 'Strain (mm)',
+          font: {
+            family: 'Open Sans, monospace',
+            size: 18,
+            color: '#7f7f7f'
+          }
+        },
+      },
+      yaxis: {
+        title: {
+          text: 'Stress (MPa)',
+          font: {
+            family: 'Open Sans, monospace',
+            size: 18,
+            color: '#7f7f7f'
+          }
+        }
+      }
+      };
     Plotly.newPlot('myChart', chartData,layout);
     
   
@@ -175,8 +205,39 @@ function removeCard(id){
   console.log(id)
   removeDivById('card'+id)
   chartData[id]=[]
-  var layout = {showlegend: false};
+  var layout = {showlegend: false,
+    title: {
+      text:'Stress Strain Curve',
+      font: {
+        family: 'Open Sans, monospace',
+        size: 24
+      },
+      xref: 'paper',
+      x: 0.05,
+    },
+    xaxis: {
+      title: {
+        text: 'Strain (mm)',
+        font: {
+          family: 'Open Sans, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      },
+    },
+    yaxis: {
+      title: {
+        text: 'Stress (MPa)',
+        font: {
+          family: 'Open Sans, monospace',
+          size: 18,
+          color: '#7f7f7f'
+        }
+      }
+    }
+    };
   Plotly.newPlot('myChart', chartData,layout);
+  color_list.push(color_list[id])
 }
 
 function addCard(proc,mat,bran,per,inf,color) {
