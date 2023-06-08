@@ -11,7 +11,7 @@
 }
 
 .navbar{
-	background: #f1f6ff;
+	background: #222629;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -23,10 +23,12 @@
 	font-size: 1.9rem;
 	font-weight: bold;
 
-	
 
 }
 
+.logo{
+	width: 30%;
+}
 
 #navbar__logo {
 	background-color: rgb(5, 29, 49);
@@ -37,7 +39,7 @@
 
 
 .sidebar{
-	background:  rgb(5, 29, 49);
+	background:  #222629;
 	position: fixed;
 	top: 100px;
 	left: 0;
@@ -49,12 +51,8 @@
 }
 
 #sidebar__logo{
-	background-color: rgb(197, 197, 197);
-	-webkit-background-clip: text;
-
-	-moz-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	font-size: x-large;
+	color: #e2ca92;
+	text-align: center;
 	font-weight: bold;
 }
 
@@ -74,7 +72,7 @@
 .sidebar ul li a.active{
     color: rgb(5, 29, 49);
 
-    background:white;
+    background: #e2ca92;
     border-right: 2px solid rgb(255, 255, 255);
 }
 
@@ -84,7 +82,7 @@
 }
 
 .materialbar{
-	background:  rgb(187, 207, 224);
+	background:  rgb(135, 188, 192);
 	position: fixed;
 	top: 100px;
 	left: 15%;
@@ -104,7 +102,8 @@
   }
   
   .dropdown-wrapper {
-	margin: 1% 10px;
+	margin: 1% 2%;
+	text-align: center;
   }
   
   .dropdown-menu {
@@ -144,7 +143,8 @@
 	font-size: 16px;
 	font-weight: bold;
 	color: #fff;
-	background-color: rgb(5, 29, 49);
+	background-color: #222629;
+	border: none;
 	cursor:pointer;
   }
 
@@ -167,6 +167,7 @@
 
 
 .plotCanvas {
+
 	display: block;
 	box-sizing: border-box;
 	height: 600px;
@@ -190,7 +191,7 @@
   right: 0;
   width: 20%;
   height: calc(100% - 200px); /* Adjust height to fit remaining space */
-  background-color: #d3d3d3; /* Replace with desired background color */
+  background-color: #d1e2e1; /* Replace with desired background color */
   text-align: center;
 }
 

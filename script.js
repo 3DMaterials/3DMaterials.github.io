@@ -61,6 +61,7 @@ class DropDown{
       const option=document.createElement("option");
       option.label = item;
       option.value = item;
+      option.text = item;
       el.appendChild(option);
     });
   }
