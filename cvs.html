@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3D Materials Database</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<div class="navbar">
+		<div class="navbar__container">
+			<img src="logo_white.png" alt="3DP Materials" class="logo">
+		</div>
+		
+	</div>
+
+	<div class="sidebar">
+		<div class="sidebar__container">
+			<h2 id="sidebar__logo">Data Types</h2>
+			<ul class="sidebar__menu">
+				<li class="sidebar__item">
+					<a href="/" class="sidebar__links">Stress/Strain</a>
+				</li>
+                <li class="sidebar__item">
+					<a href="uts.html" class="sidebar__links">Ultimate Tensile Strength</a>
+				</li>
+                <li class="sidebar__item">
+					<a href="cvs.html" class="sidebar__links">Cost vs Strength</a>
+				</li>
+				<li class="sidebar__item">
+					<a class="sidebar__links">Layer Adhesion (Coming Soon)</a>
+				</li>
+				<li class="sidebar__item">
+					<a class="sidebar__links">Impact Resistance  (Coming Soon)</a>
+				</li>
+				
+				<li class="sidebar__item">
+					<a href="about_data.html" class="sidebar__links">About The Data</a>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+
+	<div class="materialbar">
+		<form action="">
+			<div class="dropdown-container">
+				<div class="dropdown-wrapper">
+				<label for="process_menu">Printing Process:</label>
+				<select id="process_menu" class="dropdown-menu">
+				</select>
+				</div>
+			
+				<div class="dropdown-wrapper">
+				<label for="material_menu">Material:</label>
+				<select id="material_menu" class="dropdown-menu">
+				</select>
+				</div>
+			
+				<div class="dropdown-wrapper">
+				<label for="brand_menu">Brand:</label>
+				<select id="brand_menu" class="dropdown-menu">
+				</select>
+				</div>
+
+				<div class="dropdown-wrapper">
+					<label for="perim_menu">Perimeters:</label>
+					<select id="perim_menu" class="dropdown-menu">
+					</select>
+				</div>
+
+				<div class="dropdown-wrapper">
+					<label for="infill_menu">Infill:</label>
+					<select id="infill_menu" class="dropdown-menu">
+					</select>
+				</div>
+				<button class="subBtn" type="button" onclick="addData()">Add Data</button>
+			</div>
+		</form>
+		</div>
+
+		
+
+	</div>
+
+	<div id='myChart_cvs' class='plotCanvas'>
+	</div>
+
+	<div id='legend' class='plotCards'>
+		<h3>Plotted Data</h3>
+		<p>Material - Brand	&emsp; Perimeters/Infill</p>
+
+	</div>
+
+	
+	<script src="https://cdn.plot.ly/plotly-2.20.0.min.js" charset="utf-8"></script>
+	<script src="script_cvs.js"></script>
+	
+	
+</body>
+</html>

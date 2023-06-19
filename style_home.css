@@ -1,0 +1,28 @@
+.logo_header{
+	width: 100%;
+    align
+
+}
+.logo{
+    width: 70%;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: #fff;
+    background-color: grey;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: green;
+  }

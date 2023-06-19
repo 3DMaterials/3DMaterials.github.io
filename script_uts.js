@@ -206,11 +206,12 @@ async function init(){
   }
   
   function removeCard(id){
-    console.log(id)
-    removeDivById('card'+id)
-    delete chartData[id]
-    delete chart_labels[id]
-    delete bar_colors[id]
+    console.log(id);
+    removeDivById('card'+id);
+    delete chartData[id];
+    delete chart_labels[id];
+    delete chart_val[id];
+    delete bar_colors[id];
     //chart_val.splice(id,1)
     //chart_labels.splice(id,1)
     //bar_colors.splice(id,1)
@@ -230,7 +231,7 @@ async function init(){
           }
         }
       };
-      var data=[trace]
+      var data=[trace];
       var layout = {showlegend: false,
         title: {
           text:'Ultimate Strength',
